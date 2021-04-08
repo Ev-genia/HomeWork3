@@ -15,9 +15,8 @@ jobs:
       node-version: '14.x'
 
   -name: Install dependencies
-    run: |
-      set -x
-      npm install
+    run: set -x
+    run: npm install
 
   -name: Run tests
     run: npm test
