@@ -6,17 +6,17 @@ jobs:
   test-app:
     runs-on: ubuntu-latest
     steps:
-  - name: Checkout
-    uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
 
-  - name: Setup Node.js
-    uses: actions/setup-node@v1
-    with:
-      node-version: '14.x'
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
 
-  - name: Install dependencies
-    run: set -x
-    run: npm install
+    - name: Install dependencies
+      run: set -x
+      run: npm install
 
-  - name: Run tests
-    run: npm test
+    - name: Run tests
+      run: npm test
